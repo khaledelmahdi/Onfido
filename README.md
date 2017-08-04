@@ -4,9 +4,9 @@ A .NET Core port from the original [Onfido.NET](https://github.com/onfido/onfido
 
 # Installation
 
-You can obtain Onfido.NET from [nuget](https://www.nuget.org/packages/Onfido.NET) by using the Package Browser, or the Package Manager Console:
+You can obtain Onfido.Core from [nuget](https://www.nuget.org/packages/Onfido.Core) by using the Package Browser, or the Package Manager Console:
 
-    PM> Install-Package Onfido.NET
+    PM> Install-Package Onfido.Core
 
 # Usage/Setup
 
