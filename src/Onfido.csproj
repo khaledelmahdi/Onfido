@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -11,12 +11,19 @@
     <Copyright>MIT</Copyright>
     <PackageTags>onfido core</PackageTags>
     <PackageProjectUrl>https://github.com/khaledelmahdi/Onfido</PackageProjectUrl>
-    <PackageLicenseUrl>https://raw.github.com/khaledelmahdi/Onfido/master/LICENSE.md</PackageLicenseUrl>
+    <PackageLicenseUrl>https://raw.github.com/khaledelmahdi/Onfido/master/LICENSE</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/khaledelmahdi/Onfido</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>Onfido.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\Onfido.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.3"/>
-    <PackageReference Include="MimeMapping" Version="0.1.6"/>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="MimeMapping" Version="0.1.6" />
   </ItemGroup>
 </Project>
