@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170517-02"/>
+    <PackageReference Include="MSTest.TestAdapter" Version="1.1.17"/>
+    <PackageReference Include="MSTest.TestFramework" Version="1.1.17"/>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3"/>
+    <PackageReference Include="Moq" Version="4.7.99"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\src\Onfido.csproj"/>
+  </ItemGroup>
+  <Target Name="CopyFiles" AfterTargets="build">
+    <Copy DestinationFolder="$(OutputPath)/Setup" SourceFiles="Setup\passport.png" SkipUnchangedFiles="false" />
+  </Target>
+</Project>

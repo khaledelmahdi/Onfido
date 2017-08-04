@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Onfido.Core</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Khaled Elmahdi</Authors>
+    <Description>A .NET Core port from the original Onfido.NET</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <Copyright>MIT</Copyright>
+    <PackageTags>onfido core</PackageTags>
+    <PackageProjectUrl>https://github.com/khaledelmahdi/Onfido</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.github.com/khaledelmahdi/Onfido/master/LICENSE.md</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/khaledelmahdi/Onfido</RepositoryUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3"/>
+    <PackageReference Include="MimeMapping" Version="0.1.6"/>
+  </ItemGroup>
+</Project>
