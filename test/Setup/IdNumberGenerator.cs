@@ -9,7 +9,7 @@ namespace Onfido.Test.Setup
             return new IdNumber
             {
                 Type = "ssn",
-                Value = "433-54-3937"                       
+                Value = "433-54-3937"
             };
         }
 
@@ -27,7 +27,7 @@ namespace Onfido.Test.Setup
             {
                 Type = "driving_license",
                 Value = "I1234562",
-                State = "CA"
+                StateCode = "CA"
             };
         }
 
@@ -36,7 +36,7 @@ namespace Onfido.Test.Setup
             return @"{
                   ""type"": ""driving_license"",
                   ""value"": ""I1234562"",
-                  ""state"": ""CA""
+                  ""state_code"": ""CA""
             }";
         }
     }

@@ -31,8 +31,8 @@ namespace Onfido.Test.Serialization
 
             Assert.AreEqual(applicant.IdNumbers.Count(), applicantRef.IdNumbers.Count());
 
-            var ssn = new IdNumber { Type = "ssn", Value = "433-54-3937", State = null };
-            var driving_license = new IdNumber { Type = "driving_license", Value = "I1234562", State = "CA" };
+            var ssn = new IdNumber { Type = "ssn", Value = "433-54-3937", StateCode = null };
+            var driving_license = new IdNumber { Type = "driving_license", Value = "I1234562", StateCode = "CA" };
             var found_ssn = false;
             var found_driving_license = false;
 
@@ -62,7 +62,7 @@ namespace Onfido.Test.Serialization
         {
             return id1.Type == id2.Type &&
                 id1.Value == id2.Value &&
-                id1.State == id2.State;
+                id1.StateCode == id2.StateCode;
         }
 
         private bool CompareAddresses(Address address1, Address address2)

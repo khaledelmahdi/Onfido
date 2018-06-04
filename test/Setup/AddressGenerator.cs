@@ -9,6 +9,7 @@ namespace Onfido.Test.Setup
             return new Address
             {
                 BuildingNumber = "100",
+                BuildingName = "ALPHA",
                 Street = "Main Street",
                 Town = "London",
                 Postcode = "SW4 6EH",
@@ -23,6 +24,7 @@ namespace Onfido.Test.Setup
               ""flat_number"": null,
               ""building_name"": null,
               ""building_number"": ""100"",
+              ""building_name"": ""ALPHA"",
               ""street"": ""Main Street"",
               ""sub_street"": null,
               ""state"": null,

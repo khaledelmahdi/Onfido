@@ -45,6 +45,21 @@ namespace Onfido.Entities
         [JsonProperty("country")]
         public string Country;
 
+        [JsonProperty("mothers_maiden_name")]
+        public string MotherMaidenName;
+
+        [JsonProperty("previous_last_name")]
+        public string PreviousLastName;
+
+        [JsonProperty("nationality")]
+        public string Nationality;
+
+        [JsonProperty("country_of_birth")]
+        public string CountryOfBirth;
+
+        [JsonProperty("town_of_birth")]
+        public string TownOfBirth;
+
         [JsonProperty("id_numbers")]
         public IEnumerable<IdNumber> IdNumbers;
 

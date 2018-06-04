@@ -10,7 +10,7 @@ namespace Onfido.Entities
         [JsonProperty("value")]
         public string Value;
 
-        [JsonProperty("state")]
-        public string State;
+        [JsonProperty("state_code")]
+        public string StateCode;
     }
 }

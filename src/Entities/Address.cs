@@ -8,6 +8,9 @@ namespace Onfido.Entities
         [JsonProperty("flat_number")]
         public string FlatNumber;
 
+        [JsonProperty("building_name")]
+        public string BuildingName;
+
         [JsonProperty("building_number")]
         public string BuildingNumber;
 
