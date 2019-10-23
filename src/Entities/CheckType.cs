@@ -70,5 +70,8 @@ namespace Onfido.Entities
 
         [JsonProperty("reports")]
         public IEnumerable<Report> Reports;
+
+        [JsonProperty("suppress_form_emails")]
+        public bool? SuppressFormEmails;
     }
 }
