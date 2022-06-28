@@ -23,7 +23,7 @@
     <DocumentationFile>bin\Release\netstandard2.0\Onfido.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="MimeMapping" Version="0.1.6" />
   </ItemGroup>
 </Project>
